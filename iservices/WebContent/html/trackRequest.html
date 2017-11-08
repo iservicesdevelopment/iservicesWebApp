@@ -1,0 +1,720 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Electrical and Electronics Services</title>
+
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.css"></link>
+<link rel="stylesheet"
+	href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" />
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="../css/style.css">
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery Nicescroll CDN -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+<script src="../js/demo2.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/datatable-responsive.js"></script>
+	<link rel="styleSheet" href="../css/datatable-responsive.css"></link>
+
+</head>
+<body>
+	<div class="wrapper">
+		<!-- Sidebar Holder -->
+		<nav id="sidebar">
+			<div id="dismiss">
+				<i class="glyphicon glyphicon-arrow-left"></i>
+			</div>
+			<div class="sidebar-header">
+				<h3>Electrical and Electronics Services</h3>
+			</div>
+			<ul class="list-unstyled components">
+				<li class="active"><a href="#" class="glyphicon glyphicon-home">&nbsp;<label>Home</label></a>
+				</li>
+				<li><a href="#dashboardSubmenu" data-toggle="collapse"
+					aria-expanded="false"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;<label>DashBoard</label></a>
+					<ul class="collapse list-unstyled" id="dashboardSubmenu">
+						<li><a href="#"><label>New Tasks</label></a></li>
+						<li><a href="#"><label>New Orders</label></a></li>
+						<li><a href="#"><label>Support Tickets</label></a></li>
+					</ul></li>
+				<li><a href="#serviceSubmenu" data-toggle="collapse"
+					aria-expanded="false"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;&nbsp;&nbsp;<label>Request
+							for Service</label></a>
+					<ul class="collapse list-unstyled" id="serviceSubmenu">
+						<li><a href="#electronicsSubmenu" data-toggle="collapse"
+							aria-expanded="false"><label>Electronics</label></a>
+							<ul class="collapse list-unstyled" id="electronicsSubmenu">
+								<li><a href="#"><label>Laptop</label></a></li>
+								<li><a href="#"><label>Desktop</label></a></li>
+								<li><a href="#" class="glyphicon glyphicon-hdd">&nbsp;<label>External
+											Hard Drive</label></a></li>
+								<li><a href="#"><label>Home Theatre</label></a></li>
+								<li><a href="#"><label>Speakers</label></a></li>
+								<li><a href="#"><label>DTH Set Top Box</a></li>
+								<li><a href="#"><label>Printers</label></a></li>
+								<li><a href="#"><label>Monitors</label></a></li>
+								<li><a href="#"><label>TV</label></a></li>
+							</ul></li>
+						<li><a href="#applianceSubmenu"><label>Large and
+									Small Appliances</label></a>
+							<ul class="collapse list-unstyled" id="applianceSubmenu">
+								<li><a href="#"><label>Refrigerator</label></a></li>
+								<li><a href="#"><label>Washing Machine</label></a></li>
+								<li><a href="#"><label>Dish Washer</label></a></li>
+								<li><a href="#"><label>Air Conditioners</label></a></li>
+								<li><a href="#"><label>Microwave Oven</label></a></li>
+								<li><a href="#"><label>Geysers</label></a></li>
+								<li><a href="#"><label>Mixer/Juicer/Grinder</label></a></li>
+								<li><a href="#"><label>Irons</label></a></li>
+								<li><a href="#"><label>Air Purifiers</label></a></li>
+								<li><a href="#"><label>Fan</label></a></li>
+							</ul></li>
+					</ul></li>
+				<li><a href="#" class="glyphicon glyphicon-eye-open">&nbsp;<label>Track
+							your Service</label></a></li>
+				<li><a href="#" class="glyphicon glyphicon-link">&nbsp;<label>About
+							us</label></a></li>
+				<li><a href="#" class="glyphicon glyphicon-paperclip">&nbsp;<label>FAQ</label></a>
+				</li>
+				<li><a href="#" class="glyphicon glyphicon-send"><span>&nbsp;</span><label>Contact
+							us</label></a></li>
+			</ul>
+
+		</nav>
+
+		<!-- Page Content Holder -->
+		<div id="content">
+
+			<div class="container-fluid">
+				<div class="row">
+					<button type="button" id="sidebarCollapse"
+						class="btn btn-info navbar-btn">
+						<i class="glyphicon glyphicon-align-justify"></i> <span>Menu</span>
+					</button>
+					<h6 class="dashboard_h6">
+						DashBoard
+						</h6>
+						<h2 class="orderhistory_h2">Order History</h2>
+						<div>
+							<label class="noOfReq">You have <b>3</b> Request
+							</label>
+						</div>
+						<div class="searchinputdiv">
+							<div class="">
+								<div class="fromToDate">
+									<p class="font-size-11 color-grey">FROM</p>
+									<!-- <a class="link" href="#">Start Date</a> -->
+									<input type="text" name="startDateInput" id="startDateInput"
+										value="">
+								</div>
+								<div class="fromToDate">
+									<p class="font-size-11 color-grey">TO</p>
+									<!-- <a class="link" href="#">End Date</a> -->
+									<input type="text" name="endDateInput" id="endDateInput"
+										value="">
+								</div>
+								<div class="srchTxtbox">
+									<input type="text" name="orderTrackinput" id="orderTrackinput"
+										value="" placeholder="Search for ID number">
+									<button type="button" class="btn btn-info srchbtn">
+										<span class="glyphicon glyphicon-search"></span> Search
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<table id="example"
+								class="table table-striped table-bordered trackRequestTable"
+								cellspacing="0" width="100%" align="center">
+								<thead>
+									<tr>
+										<th class="color-grey fs-12">REQUEST ID</th>
+										<th class="color-grey fs-12">CATEGORY</th>
+										<th class="color-grey fs-12">PRODUCT</th>
+										<th class="color-grey fs-12">DESCRIPTION</th>
+										<th class="color-grey fs-12">CREATION DATE</th>
+										<th class="color-grey fs-12">STATUS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+											Related
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+											Machine
+										</td>
+										<td>
+											<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+											For Recharge
+										</td>
+										<td class="hidden-xs">
+											<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+										</td>
+										<td><span
+											class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+												21:32:44</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+</body>
+</html>

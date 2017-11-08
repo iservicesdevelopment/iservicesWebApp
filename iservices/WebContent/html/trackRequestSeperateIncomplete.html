@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"></script>
+	
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css.map"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css"></script>
+<style type="text/css">
+.noOfReq {
+	font-size: 40px;
+	font-weight: normal !important;
+}
+
+#orderTrackinput {
+	border: none;
+	border-bottom: 1px solid;
+}
+
+div.fromToDate {
+	width: 10%;
+	float: left;
+}
+
+div.searchinputdiv {
+	margin-bottom: 25px;
+}
+
+div.srchTxtbox {
+	padding-top: 20px;
+}
+
+.srchbtn {
+	padding: 0;
+}
+div.dateSrchTextrow {
+    margin-left: 20px;
+}
+.right-container{
+}
+</style>
+</head>
+<body>
+
+	
+		<div class="col-md-2">TEsting</div>
+		<div class="col-xs-3 col-md-10 right-container">
+			<div class="row">
+			<h6>DashBoard</h2>
+			<h2>Order History</h2>
+				<div>
+					<label class="noOfReq">You have <b>3</b> Request
+					</label>
+				</div>
+				<div class="searchinputdiv">
+					<div class="class-md-12">
+						<div class="fromToDate">
+							<p class="font-size-11 color-grey">FROM</p>
+							<a class="link">Start Date</a>
+						</div>
+						<div class="fromToDate">
+							<p class="font-size-11 color-grey">TO</p>
+							<a class="link">End Date</a>
+						</div>
+						<div class="srchTxtbox">
+							<input type="text" name="orderTrackinput" id="orderTrackinput"
+								value="" placeholder="Search for ID number">
+							<button type="button" class="btn btn-info srchbtn">
+								<span class="glyphicon glyphicon-search"></span> Search
+							</button>
+						</div>
+					</div>
+				</div>
+				<div>
+
+					<table width="100%" cellpadding="0" cellspacing="0"
+						class="table track-request" align="center">
+						<thead class="small font-light hidden-xs border-bottom">
+							<tr>
+								<th class="color-grey fs-11">REQUEST ID</th>
+								<th class="color-grey fs-11">CATEGORY</th>
+								<th class="color-grey fs-11">PRODUCT</th>
+								<th class="color-grey fs-11">DESCRIPTION</th>
+								<th class="color-grey fs-11">CREATION DATE</th>
+								<th class="color-grey fs-11">STATUS</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="clear pt-30 pb-30"
+								style="border-bottom: 1px solid #ddd; vertical-align: center">
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+									<span
+									class="btn xsmall visible-xs pull-right btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span>
+								</td>
+								<td class="visible-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+									Related
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+									Machine
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+									For Recharge
+								</td>
+								<td class="hidden-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td><span
+									class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="clear pt-30 pb-30"
+								style="border-bottom: 1px solid #ddd; vertical-align: center">
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+									<span
+									class="btn xsmall visible-xs pull-right btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span>
+								</td>
+								<td class="visible-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+									Related
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+									Machine
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+									For Recharge
+								</td>
+								<td class="hidden-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td><span
+									class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="clear pt-30 pb-30"
+								style="border-bottom: 1px solid #ddd; vertical-align: center">
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+									<span
+									class="btn xsmall visible-xs pull-right btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span>
+								</td>
+								<td class="visible-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+									Related
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+									Machine
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+									For Recharge
+								</td>
+								<td class="hidden-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td><span
+									class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="clear pt-30 pb-30"
+								style="border-bottom: 1px solid #ddd; vertical-align: center">
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">REQUEST ID</p>66663611
+									<span
+									class="btn xsmall visible-xs pull-right btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span>
+								</td>
+								<td class="visible-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">CATEGORY</p>Service
+									Related
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">PRODUCT</p>Washing
+									Machine
+								</td>
+								<td>
+									<p class="color-grey fs-11 pl-0 visible-xs">DESCRIPTION</p>Request
+									For Recharge
+								</td>
+								<td class="hidden-xs">
+									<p class="color-grey fs-11 pl-0 visible-xs">CREATION DATE</p>17/Oct/17
+								</td>
+								<td><span
+									class="btn xsmall hidden-xs btn-purple-thin-stroked">Closed,21-OCT-2017
+										21:32:44</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
