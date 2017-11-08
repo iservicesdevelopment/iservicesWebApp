@@ -1,0 +1,183 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+ul {
+	padding-left: 0;
+	margin-bottom: 0 !important;
+}
+
+li {
+	list-style-type: none;
+}
+
+.dnone {
+	display: none;
+}
+
+.dblock {
+	display: block;
+}
+
+.b-1 {
+	border: 1px solid #aaa;
+}
+
+.bl-1 {
+	border-left: 1px solid #aaa;
+}
+
+.br-1 {
+	border-right: 1px solid #aaa;
+}
+
+.bb-1 {
+	border-bottom: 1px solid #aaa;
+}
+
+.bt-1 {
+	border-top: 1px solid #aaa;
+}
+
+.txtcen {
+	text-align: center;
+}
+
+.header {
+	font-size: 24px;
+	background-color: #ddd;
+	font-weight: bold;
+	line-height: 60px;
+}
+
+@media only screen and (min-width:992px) {
+	.header {
+		text-align: center;
+		line-height: 160px;
+	}
+}
+
+.header a {
+	color: inherit;
+	padding: 0 35px;
+}
+
+.header a:hover {
+	color: inherit;
+	background-color: #ccc;
+}
+
+.menu {
+	background-color: #ddd;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* @media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){} */
+@media only screen and (min-width:992px) {
+	.menu {
+		/* padding-right: 10px;
+		padding-left: 10px; */
+		
+	}
+}
+
+@media only screen and (max-width:992px) {
+	.menu {
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		position: fixed !important;
+		top: 61px !important;
+		z-index: 9 !important;
+		overflow: auto;
+	}
+}
+
+.menu ul li a {
+	display: block;
+	padding: 10px 5px;
+	color: inherit;
+	border-right: 1px solid #aaa;
+}
+
+.menu ul li a:hover {
+	background-color: #ccc;
+}
+
+@media only screen and (max-width:992px) {
+	.menu ul li a {
+		border-bottom: 1px solid #aaa;
+		border-right: 0;
+		border-left: 0;
+	}
+}
+
+.menu ul li.active>a {
+	background-color: #fff;
+	text-decoration: none;
+	cursor: default;
+	border-right: 0;
+}
+
+@media only screen and (max-width:992px) {
+	.menu ul li.active>a {
+		background-color: #ccc;
+	}
+}
+
+.leftpane {
+	background-color: red;
+}
+
+.rightpane {
+	
+}
+
+@media only screen and (max-width:992px) {
+	.rightpane {
+		
+	}
+}
+
+.rgt-header {
+	font-size: 30px;
+	color: #4CAF50;
+	padding: 10px 0;
+}
+
+.div-mbt-15 {
+	border-bottom: 1px solid #ccc;
+	margin: 15px 0;
+}
+
+.subheadlabel {
+	padding: 11px 0;
+	font-size: 18px;
+}
+
+input {
+	height: 40px;
+	font-size: 18px;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.btns {
+	/* border: 1px solid #aaa; */
+	border-radius: 5px;
+	height: 40px;
+	width: 100px;
+	font-weight: bold !important;
+	color: #777;
+}
+
+.btns:hover {
+	color: inherit;
+	background-color: #777;
+}
