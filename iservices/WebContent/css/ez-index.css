@@ -1,0 +1,53 @@
+@charset "ISO-8859-1";
+
+.ez-footerSection {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #c0c0c0;
+}
+
+.ez-overlay {
+	background-color: #000;
+	bottom: 0;
+	left: 0;
+	opacity: .5;
+	position: relative;
+	right: 0;
+	top: 0;
+	z-index: 0;
+}
+
+.text-white {
+	color: white !important;
+	font-family: cursive;
+	font-size: 16px;
+	line-height: 1.42857143;
+}
+
+.footerTxtHeader {
+	color: black !important;
+	font-family: cursive;
+	font-weight : bold;
+	line-height: 1.42857143;
+}
+
+.ez-footerSection .footer-lower .social-list {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+
+.ez-footerSection .footer-lower .social-list .soc-item {
+	margin: 0 .5rem;
+}
+
+.ez-copyright {
+	font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.6;
+}
