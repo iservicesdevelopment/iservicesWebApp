@@ -2,4 +2,4 @@
 WebApplication
 
 
-Refer https://thenounproject.com for Logos or glyph images
+Refer https://thenounproject.com  or https://www.flaticon.com/free-icon for Logos or glyph images
